@@ -183,7 +183,7 @@
 <body>
 <div class="paper-texture"></div>
 <div class="wordmark">SignalWatch</div>
-<div class="counter"><span id="curNum">01</span> / <span id="totNum">15</span></div>
+<div class="counter"><span id="curNum">01</span> / <span id="totNum">13</span></div>
 
 <div class="deck" id="deck">
 
@@ -678,10 +678,6 @@
   window.addEventListener('resize', fitDeck);
 
   var deck = document.getElementById('deck');
-  ['s10','s11','s12'].forEach(function(id){
-    deck.appendChild(document.getElementById(id));
-  });
-
   var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
   var total = slides.length;
   var current = 0;
